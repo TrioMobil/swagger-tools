@@ -1021,6 +1021,13 @@
             "$ref": "#/definitions/schema"
           }
         },
+        "oneOf": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/schema"
+          },
+          "minItems": 1
+        },
         "properties": {
           "type": "object",
           "additionalProperties": {
