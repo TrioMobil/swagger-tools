@@ -1871,6 +1871,11 @@ var isValidDateTime = module.exports.isValidDateTime = function (dateTime) {
   }
 
   parts = dateTime.toLowerCase().split('t');
+
+  if (parts.length > 2) {
+    return false;
+  }
+  
   date = parts[0];
   time = parts.length > 1 ? parts[1] : undefined;
 
